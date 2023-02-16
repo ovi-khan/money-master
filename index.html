@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Money Master</title>
+</head>
+<body>
+    <h1 class="text-4xl text-center mt-10">Money Master</h1>
+    <main>
+        <section class="grid grid-cols-2 gap-10 m-auto px-2">
+            <div>
+                <img class="w-auto mt-10" src="pexels-photo-5900228.jpeg" alt="">
+            </div>
+            <div class="mt-10 text-center">
+                <h2 class="text-3xl mb-5">Income</h2>
+                <h4 class="text-2xl">Income: <span><input class="bg-slate-200 rounded-md" type="text" name="" id="total-income"></span></h4>
+
+                <h2 class="text-3xl mt-5">Expense</h2>
+                <h4 class="text-2xl mt-5">Food: <span><input class="bg-slate-200 rounded-md" type="text" name="" id="food-expense"></span></h4>
+                <h4 class="text-2xl mt-5">Rent: <span><input class="bg-slate-200 rounded-md" type="text" name="" id="rent-expense"></span></h4>
+                <h4 class="text-2xl mt-5">Clothes: <span><input class="bg-slate-200 rounded-md" type="text" name="" id="clothes-expense"></span></h4>
+                
+                <button id="expense-calculate" class="bg-blue-500 px-8 py-1 rounded-lg mt-5 mb-5">Caculate</button>
+
+                <h3 class="text-2xl">Total Expanse: <span id="total-expense-value">00</span></h3>
+                <h3 class="text-2xl mb-5">Balance:<span id="net-balance">00</span></h3>
+                <input class="bg-slate-200 rounded-md" type="text" name="" id="saving-input"> <span>%</span>
+                <button id="saving-btn" class="bg-red-500 px-8 py-1 rounded-lg">Save</button>
+                <h4 class="text-2xl mt-5">Saving Amount: <span id="saving-amount">00</span></h4>
+                <h4 class="text-2xl">Remaining Balance: <span id="remaining-balance">00</span></h4>
+            </div>
+        </section>
+    </main>
+    <script src="js/money-master.js"></script>
+</body>
+</html>
